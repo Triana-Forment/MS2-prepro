@@ -17,7 +17,7 @@ def rank_TIC_normalization(input_file, output_file):
         Nothing, it writes an mgf file with the intensities normalized in the 'output_file'
     """
 
-    reader = mgf.read(input_file)
+    reader = mgf.MGF(input_file)
     for spectrum in reader:
         spec_len = len(spectrum["intensity array"]) # Number of ions in MS2 spectrum
         TIC = np.sum(spectrum["intensity array"]) # Total ion current
