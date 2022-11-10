@@ -1,5 +1,5 @@
 # MS2-prepro
-## Python lib for MS/MS spectra pre-processing
+## Python scripts and Jupyter notebooks for MS/MS spectra pre-processing
 
 ### Remove precursor peak 
 Remove fragment peak(s) close to the precursor m/z.
